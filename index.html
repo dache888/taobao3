@@ -127,6 +127,7 @@
   .couplet{
     position:absolute; top:44px; z-index:1;
     writing-mode:vertical-rl; text-orientation:upright; letter-spacing:3px;
+    line-height:1;
     font-size:12px; font-weight:800; color:#ffe9b5;
     background:linear-gradient(180deg,rgba(255,150,60,.28),rgba(255,215,110,.14));
     border:1px solid rgba(255,215,110,.5); border-radius:8px;
@@ -134,6 +135,7 @@
     text-shadow:0 2px 6px rgba(120,0,0,.4);
   }
   .cp-l{ left:6px; } .cp-r{ right:6px; }
+  .couplet .hz{ text-combine-upright:all; -webkit-text-combine:horizontal; }
   .cracker{
     position:absolute; top:-4px; left:50%; transform:translateX(-50%); z-index:1;
     font-size:14px; letter-spacing:2px; white-space:nowrap;
@@ -555,7 +557,7 @@
   <div class="spark s4"></div>
 
   <!-- 新春氛围增强：对联 / 鞭炮 / 福字 / 金元宝 / 中灯笼 -->
-  <div class="couplet cp-l">双11红包天天领</div>
+  <div class="couplet cp-l">双<span class="hz">11</span>红包天天领</div>
   <div class="couplet cp-r">超级福利享不停</div>
   <div class="cracker">🧨🧨🧨</div>
   <div class="lantern l-mid"><span>🏮</span><i></i></div>
