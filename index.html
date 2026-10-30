@@ -53,24 +53,24 @@
   }
   .hero-top .today{ opacity:.75; }
 
-  .hero-right{ position:relative; z-index:2; margin-left:auto; text-align:right; flex:1; min-width:0; }
+  .hero-right{ position:relative; z-index:2; margin-left:auto; text-align:center; flex:1; min-width:0; }
   .hero-title{
     position:relative; z-index:2; margin-top:0; color:#fff;
-    font-size:12px; letter-spacing:1px; opacity:.9; white-space:nowrap;
+    font-size:16px; letter-spacing:1px; opacity:.95; white-space:nowrap;
   }
   .hero-amount{
-    position:relative; z-index:2; display:flex; align-items:flex-end; justify-content:flex-end; gap:5px;
+    position:relative; z-index:2; display:flex; align-items:flex-end; justify-content:center; gap:6px;
     margin-top:0; color:#fff; line-height:1;
   }
-  .hero-amount .pre{ font-size:16px; font-weight:800; margin-bottom:3px; }
+  .hero-amount .pre{ font-size:22px; font-weight:800; margin-bottom:5px; }
   .hero-amount .num{
-    font-size:32px; font-weight:900; letter-spacing:-1px;
+    font-size:46px; font-weight:900; letter-spacing:-1px;
     background:linear-gradient(180deg,#fff8dc 10%,#ffd45e 55%,#f7a417 100%);
     -webkit-background-clip:text; background-clip:text; color:transparent;
     text-shadow:0 4px 18px rgba(120,20,0,.35);
     font-family:"DIN Alternate","Helvetica Neue",Arial,sans-serif;
   }
-  .hero-amount .unit{ font-size:15px; font-weight:800; margin-bottom:4px; }
+  .hero-amount .unit{ font-size:20px; font-weight:800; margin-bottom:6px; }
   /* ---- 新春装饰 ---- */
   .lantern{ position:absolute; top:-6px; z-index:1; animation:sway 3.2s ease-in-out infinite; transform-origin:top center; }
   .l-left{ left:14px; }
@@ -436,7 +436,7 @@
   @keyframes fadeUp{ from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:none;} }
 
   @media (max-width:360px){
-    .hero-amount .num{ font-size:26px; }
+    .hero-amount .num{ font-size:38px; }
   }
 </style>
 </head>
