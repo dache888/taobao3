@@ -28,7 +28,7 @@
     background:
       radial-gradient(circle at 20% 0%, rgba(255,214,110,.38), transparent 55%),
       linear-gradient(165deg,#f04a2a 0%, #d81f14 45%, #a80f08 100%);
-    padding:46px 14px 58px;
+    padding:46px 32px 58px;
     overflow:hidden;
     border-radius:0 0 22px 22px;
   }
@@ -122,6 +122,40 @@
     0%,100%{ opacity:.15; transform:scale(.7); }
     50%{ opacity:1; transform:scale(1.25); }
   }
+
+  /* ---- 新春氛围增强 ---- */
+  .couplet{
+    position:absolute; top:44px; z-index:1;
+    writing-mode:vertical-rl; letter-spacing:3px;
+    font-size:12px; font-weight:800; color:#ffe9b5;
+    background:linear-gradient(180deg,rgba(255,150,60,.28),rgba(255,215,110,.14));
+    border:1px solid rgba(255,215,110,.5); border-radius:8px;
+    padding:8px 3px; opacity:.95;
+    text-shadow:0 2px 6px rgba(120,0,0,.4);
+  }
+  .cp-l{ left:6px; } .cp-r{ right:6px; }
+  .cracker{
+    position:absolute; top:-4px; left:50%; transform:translateX(-50%); z-index:1;
+    font-size:14px; letter-spacing:2px; white-space:nowrap;
+    animation:crack 1.6s ease-in-out infinite;
+    filter:drop-shadow(0 3px 6px rgba(120,0,0,.4));
+  }
+  @keyframes crack{ 0%,100%{transform:translateX(-50%) scale(1) rotate(-2deg);} 50%{transform:translateX(-50%) scale(1.08) rotate(2deg);} }
+  .fu{
+    position:absolute; z-index:1; font-size:16px; color:#ffd76e;
+    animation:fuFloat 4.5s ease-in-out infinite; opacity:.9;
+    text-shadow:0 3px 8px rgba(120,0,0,.45);
+  }
+  .fu1{ top:64px; right:22%; } .fu2{ top:150px; left:14%; animation-delay:1.6s; font-size:13px; }
+  @keyframes fuFloat{ 0%,100%{transform:translateY(0) rotate(-8deg);} 50%{transform:translateY(-8px) rotate(8deg);} }
+  .ingot{
+    position:absolute; z-index:1; font-size:15px;
+    animation:fuFloat 5.2s ease-in-out infinite; filter:drop-shadow(0 3px 6px rgba(120,0,0,.4));
+  }
+  .ig1{ top:44px; left:34%; animation-delay:.8s; } .ig2{ top:190px; right:10%; animation-delay:2.2s; font-size:12px; }
+  .l-mid{ left:50%; transform:translateX(-50%); animation-delay:.6s; }
+  .l-mid span{ font-size:24px; }
+  .lantern.l-mid{ top:-4px; }
 
   /* ---- 双11 氛围条 ---- */
   .d11-strip{
@@ -519,6 +553,16 @@
   <div class="spark s2"></div>
   <div class="spark s3"></div>
   <div class="spark s4"></div>
+
+  <!-- 新春氛围增强：对联 / 鞭炮 / 福字 / 金元宝 / 中灯笼 -->
+  <div class="couplet cp-l">爆竹声声辞旧岁</div>
+  <div class="couplet cp-r">红包滚滚迎新春</div>
+  <div class="cracker">🧨🧨🧨</div>
+  <div class="lantern l-mid"><span>🏮</span><i></i></div>
+  <div class="fu fu1">🧧</div>
+  <div class="fu fu2">福</div>
+  <div class="ingot ig1">💰</div>
+  <div class="ingot ig2">🪙</div>
 </header>
 
 <main class="wrap">
