@@ -135,7 +135,10 @@
     text-shadow:0 2px 6px rgba(120,0,0,.4);
   }
   .cp-l{ left:6px; } .cp-r{ right:6px; }
-  .couplet .hz{ text-combine-upright:all; -webkit-text-combine:horizontal; }
+  .couplet .hz{
+    display:inline-block; writing-mode:horizontal-tb; text-orientation:mixed;
+    transform:scale(.92); letter-spacing:0; margin:1px 0;
+  }
   .cracker{
     position:absolute; top:-4px; left:50%; transform:translateX(-50%); z-index:1;
     font-size:14px; letter-spacing:2px; white-space:nowrap;
