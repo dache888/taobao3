@@ -247,8 +247,7 @@
 
   /* ---------- 领取教学（横向三列·置顶） ---------- */
   .tut-top{
-    position:relative; margin:14px auto -34px; z-index:9;
-    width:calc(100% - 32px); max-width:420px;
+    position:relative; margin:-46px auto 0; z-index:9;
     background:#fff; border-radius:18px; padding:12px 10px 13px;
     box-shadow:0 8px 24px rgba(160,40,20,.22);
     border:1px solid rgba(226,35,26,.10);
@@ -269,10 +268,9 @@
     display:flex; flex-direction:column;
   }
   .tut-img .badge{
-    position:absolute; top:0; left:50%; transform:translateX(-50%); z-index:3;
+    position:absolute; top:0; left:0; z-index:3;
     background:linear-gradient(135deg,#ff6b3d,#e2231a); color:#fff;
-    font-size:10px; font-weight:900; padding:2px 7px; border-radius:0 0 9px 9px;
-    white-space:nowrap;
+    font-size:10px; font-weight:900; padding:2px 7px; border-radius:0 0 9px 0;
   }
   .tut-cap{
     margin-top:4px; font-size:10px; line-height:1.45; color:#7c5a4c; text-align:center;
@@ -448,50 +446,6 @@
   <span class="x" onclick="document.getElementById('wxbar').remove()">✕</span>
 </div>
 
-  <section class="tut-top fade">
-    <div class="tut-head">🎯 领取 3 步走 <i>必看</i></div>
-    <div class="tut-row">
-
-      <div class="tut-col">
-        <div class="tut-img t1">
-          <div class="badge">① 点✕关闭</div>
-          <div class="x">✕</div>
-          <div class="logo">淘</div>
-          <div class="sl">太好逛了吧!</div>
-          <div class="sb">请重新登录</div>
-          <div class="inp">+86 请输入手机号</div>
-          <div class="btn">获取验证码</div>
-        </div>
-        <div class="tut-cap">出现登录页<br>点右上角<b>✕关掉</b></div>
-      </div>
-
-      <div class="tut-col">
-        <div class="tut-img t2">
-          <div class="badge">② 点允许</div>
-          <div class="pg">
-            <div class="bar"></div>
-            <div class="gds"><span></span><span></span></div>
-          </div>
-          <div class="dlg">
-            <div class="dt">当前网站请求打开淘宝</div>
-            <div class="db"><span>拒绝</span><span class="ok">允许</span></div>
-          </div>
-        </div>
-        <div class="tut-cap">弹出提示<br>点蓝色<b>「允许」</b></div>
-      </div>
-
-      <div class="tut-col">
-        <div class="tut-img t3">
-          <div class="badge">③ 领红包</div>
-          <div class="app">🧧 淘宝App</div>
-          <div class="ok">已打开活动页 ✓</div>
-          <div class="ok2">开红包·领奖励</div>
-        </div>
-        <div class="tut-cap">自动进淘宝<br><b>开红包领奖励</b></div>
-      </div>
-
-    </div>
-  </section>
 
 <header class="hero">
   <div class="hero-top">
@@ -567,6 +521,51 @@
 </header>
 
 <main class="wrap">
+
+  <section class="tut-top fade">
+    <div class="tut-head">🎯 领取 3 步走 <i>必看</i></div>
+    <div class="tut-row">
+
+      <div class="tut-col">
+        <div class="tut-img t1">
+          <div class="badge">① 点✕关闭</div>
+          <div class="x">✕</div>
+          <div class="logo">淘</div>
+          <div class="sl">太好逛了吧!</div>
+          <div class="sb">请重新登录</div>
+          <div class="inp">+86 请输入手机号</div>
+          <div class="btn">获取验证码</div>
+        </div>
+        <div class="tut-cap">出现登录页<br>点右上角<b>✕关掉</b></div>
+      </div>
+
+      <div class="tut-col">
+        <div class="tut-img t2">
+          <div class="badge">② 点允许</div>
+          <div class="pg">
+            <div class="bar"></div>
+            <div class="gds"><span></span><span></span></div>
+          </div>
+          <div class="dlg">
+            <div class="dt">当前网站请求打开淘宝</div>
+            <div class="db"><span>拒绝</span><span class="ok">允许</span></div>
+          </div>
+        </div>
+        <div class="tut-cap">弹出提示<br>点蓝色<b>「允许」</b></div>
+      </div>
+
+      <div class="tut-col">
+        <div class="tut-img t3">
+          <div class="badge">③ 领红包</div>
+          <div class="app">🧧 淘宝App</div>
+          <div class="ok">已打开活动页 ✓</div>
+          <div class="ok2">开红包·领奖励</div>
+        </div>
+        <div class="tut-cap">自动进淘宝<br><b>开红包领奖励</b></div>
+      </div>
+
+    </div>
+  </section>
 
   <section class="red-card fade">
     <div class="rc-year">2 0 2 6</div>
