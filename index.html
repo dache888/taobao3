@@ -468,37 +468,6 @@
     50%{ transform:translateY(-2px); box-shadow:0 12px 28px rgba(226,35,26,.42); }
   }
 
-  /* ---------- 领蛋教学卡片 ---------- */
-  .egg-card{
-    display:flex; align-items:center; gap:12px; text-decoration:none;
-    margin-top:20px; padding:14px 16px; border-radius:16px;
-    background:linear-gradient(135deg,#fff3d6,#ffe7b8);
-    border:1px solid rgba(255,180,60,.55);
-    box-shadow:0 6px 18px rgba(200,120,20,.16);
-  }
-  .egg-ico{
-    flex:0 0 52px; width:52px; height:52px; border-radius:15px;
-    display:grid; place-items:center; font-size:28px;
-    background:linear-gradient(150deg,#ffe9ad,#ffc433);
-    box-shadow:0 4px 10px rgba(220,140,20,.3);
-    animation:bob2 2.6s ease-in-out infinite;
-  }
-  @keyframes bob2{ 0%,100%{transform:translateY(0) rotate(-5deg);} 50%{transform:translateY(-4px) rotate(5deg);} }
-  .egg-body{ flex:1; min-width:0; }
-  .egg-t{ font-size:15.5px; font-weight:900; color:#8a4d00; }
-  .egg-t i{
-    font-style:normal; font-size:10px; font-weight:800; color:#fff;
-    background:linear-gradient(180deg,#ffb340,#f26a00);
-    padding:2px 8px; border-radius:999px; margin-left:6px; vertical-align:2px;
-  }
-  .egg-d{ margin-top:4px; font-size:11.5px; color:#a9763c; line-height:1.5; }
-  .egg-go{
-    flex:0 0 auto; font-size:13px; font-weight:900; color:#fff;
-    background:linear-gradient(180deg,#ffb340,#f26a00);
-    padding:8px 14px; border-radius:999px;
-    box-shadow:0 4px 10px rgba(242,106,0,.3);
-  }
-
   .notice{
     margin:18px 0 8px; font-size:11.5px; color:#a9998e; line-height:1.7; text-align:center;
   }
@@ -682,16 +651,6 @@
   <div id="list"></div>
 
 
-
-  <!-- 领蛋教学卡片 -->
-  <a class="egg-card fade" href="https://dache888.github.io/jiaocheng/" >
-    <div class="egg-ico">🥚</div>
-    <div class="egg-body">
-      <div class="egg-t">人人 30 枚鸡蛋 <i>教程</i></div>
-      <div class="egg-d">平安健康绑定一下 · 0.01元带走 30枚/1500g · 点开看教程</div>
-    </div>
-    <span class="egg-go">去领 ›</span>
-  </a>
 
   <div class="notice">
     本页面为活动信息分享页，活动规则与奖励以淘宝官方页面为准。<br>
